@@ -14,7 +14,7 @@ public class clienteDTO {
         return salario;
     }
 
-    public void setSalario(String endereco) {
+    public void setSalario(String Salario) {
         this.salario = salario;
     }
 

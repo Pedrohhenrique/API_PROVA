@@ -19,9 +19,9 @@ public class Controller {
 
     @PostMapping
     public Funcionario creat(@RequestBody @Valid Funcionario funcionario){
-     for (Funcionario p : funcionario.getSalario()){
-           p.set(p.getPrecoIndividual()* p.getQuantidade());
-       }
+//   for (Salario p : Salario.setSalario())
+//        p.setSalarioTotal(p.getSalario()* p.getMesesTrabaladosNoAno());
+
         Funcionario funcionarioSaved = repository.save(funcionario);
         return funcionarioSaved;
     }

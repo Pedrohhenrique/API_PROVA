@@ -15,9 +15,9 @@ public class Funcionario {
     private Integer mesesTrabaladosNoAno;
     private Double salario;
     private Double bonusPorIdade;
-    private 
+    private Double salarioTotal;
 
-    public Funcionario(Long id, String cpf, String idade, String nome, Integer mesesTrabaladosNoAno, Double salario, Double bonusPorIdade) {
+    public Funcionario(Long id, String cpf, String idade, String nome, Integer mesesTrabaladosNoAno, Double salario, Double bonusPorIdade, Double salarioTotal) {
         this.id = id;
         this.cpf = cpf;
         Idade = idade;
@@ -25,6 +25,7 @@ public class Funcionario {
         this.mesesTrabaladosNoAno = mesesTrabaladosNoAno;
         this.salario = salario;
         this.bonusPorIdade = bonusPorIdade;
+        this.salarioTotal = salarioTotal;
     }
 
     public Funcionario() {
@@ -33,7 +34,6 @@ public class Funcionario {
     public Long getId() {
         return id;
     }
-
 
     public String getCpf() {
         return cpf;
@@ -81,5 +81,13 @@ public class Funcionario {
 
     public void setBonusPorIdade(Double bonusPorIdade) {
         this.bonusPorIdade = bonusPorIdade;
+    }
+
+    public Double getSalarioTotal() {
+        return salarioTotal;
+    }
+
+    public void setSalarioTotal(Double salarioTotal) {
+        this.salarioTotal = salarioTotal;
     }
 }
