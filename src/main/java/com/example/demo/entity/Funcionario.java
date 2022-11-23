@@ -90,4 +90,5 @@ public class Funcionario {
     public void setSalarioTotal(Double salarioTotal) {
         this.salarioTotal = salarioTotal;
     }
+
 }
